@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 
 # ---- ThingSpeak API details
 CHANNEL_ID = ""
-API_KEY = ""  # Read API Key
+API_KEY = "" # Read API Key
 THINGSPEAK_URL = f"https://api.thingspeak.com/channels/{CHANNEL_ID}/feeds.json?api_key={API_KEY}&results=100"
 
 # ---- Fetch data from ThingSpeak

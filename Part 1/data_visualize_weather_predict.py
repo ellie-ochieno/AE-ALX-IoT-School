@@ -23,8 +23,8 @@ import matplotlib.pyplot as plt
 from prophet import Prophet
 
 # ---- ThingSpeak API details
-CHANNEL_ID = ""
-API_KEY = ""  # Read API Key
+CHANNEL_ID = "2739538"
+API_KEY = "HIWSB0KUZ7UM29KU" # Read API Key
 THINGSPEAK_URL = f"https://api.thingspeak.com/channels/{CHANNEL_ID}/feeds.json?api_key={API_KEY}&results=100"
 
 # ---- Fetch data from ThingSpeak
