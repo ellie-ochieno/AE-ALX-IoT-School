@@ -1,7 +1,7 @@
 # AE-ALX-IoT-School
 ## Angaza Elimu - ALX IoT School Training
 
-### Session 16: Data Science and ML for IoT - Part 1
+### Session 16: Data Science and ML for IoT - Part 1&2
 
 This guide provides a comprehensive setup for IoT beginner students to gather, monitor, and analyze data using ThingSpeak, ESP32, and Google Colab. In this session, you will learn to create a ThingSpeak channel, connect an ESP32 microcontroller, and analyze collected data using Google Colab.
 
