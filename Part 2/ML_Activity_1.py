@@ -13,7 +13,7 @@
 *   ANGAZA ELIMU&ALX - IOT SCHOOL: Cohort 1, 2024
 * --------------------------------------------------
 '''
-
+#DoHardThings01
 # Import necessary libraries
 import requests
 import pandas as pd
@@ -24,8 +24,8 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 # ThingSpeak Configuration
-CHANNEL_ID = '2739538'
-READ_API_KEY = 'HIWSB0KUZ7UM29KU'
+CHANNEL_ID = ''
+READ_API_KEY = ''
 
 # Section 1: Data Collection from ThingSpeak
 def fetch_data():
@@ -41,6 +41,7 @@ def fetch_data():
 
 # Section 2: Data Preparation
 def prepare_data(df):
+    df=df.dropna() #drops null and non-applicable datasets in api payload
     df['time_index'] = (df['created_at'] - df['created_at'].min()).dt.total_seconds()
     X = df[['time_index']]
     y_temp = df['temperature']

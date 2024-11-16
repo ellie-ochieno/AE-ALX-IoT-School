@@ -26,8 +26,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 
 # ThingSpeak Configuration
-CHANNEL_ID = '2739538'
-READ_API_KEY = 'HIWSB0KUZ7UM29KU'
+CHANNEL_ID = ''
+READ_API_KEY = ''
 
 # Section 1: Data Collection from ThingSpeak
 def fetch_data():
@@ -64,6 +64,7 @@ def label_temperature_trends(df):
 # Section 3: Split data into features and labels
 def prepare_data(df):
     # Features: Use time-based index and previous temperature values
+    df=df.dropna() #drops null and non-applicable datasets in api payload
     df['time_index'] = (df['created_at'] - df['created_at'].min()).dt.total_seconds()
     X = df[['time_index', 'temperature']]
     y = df['trend']
