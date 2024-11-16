@@ -68,7 +68,11 @@ To access the practical code for this session, refer to the following GitHub rep
 This repository contains all necessary files, including:
   - **data_collect/data_collect.ino**: For collecting data from DHT22 and sending it to ThingSpeak.
   - **data_collect/secrets.h**: For configuring WiFi and ThingSpeak credentials.
-  - **Python scripts**: For retrieving, analyzing, and visualizing data in Google Colab.
+  - **Python scripts**: 
+    - **Data Analysis for IoT**: 
+      - Located in **Part 1** folder - Scripts for retrieving, analyzing, and visualizing data in Google Colab.
+    - **Machine Learning(ML) for IoT**: 
+      - Located in **Part 2** folder - Scripts for running ML models; training, testing and evaluation in Google Colab
 
 ---
 
